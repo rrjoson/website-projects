@@ -1,0 +1,41 @@
+/* Maps
+   ========================================================================== */
+
+#indiv-map {
+	width: 100%;
+	height: 400px;
+}
+
+#contact-map {
+	width: 100%;
+	height: 400px;
+}
+
+#filter-map {
+	width: 100%;
+	height: 500px;
+}
+
+.marker-info {
+	padding: 10px;
+	max-width: 250px;
+
+	a:hover {
+		opacity: 1;
+	}
+
+	.inner-img {
+		width: 100%;
+	}
+
+	.property-name {
+		color: $font-black;
+		margin: 15px 0 0;
+	}
+
+	.property-type {
+		color: $font-black;
+		font-family: "Lato-Italic";
+		font-size: 1.4rem;
+	}
+}

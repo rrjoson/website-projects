@@ -1,0 +1,25 @@
+/* Search Form
+   ========================================================================== */
+
+.search-form {
+	color: $white;
+
+	&.-main {
+		padding: 15px 0;
+		display: inline-block;
+	}
+
+	> .icon {
+		font-style: 1.4rem;
+	}
+
+	> .search-text {
+		font-family: "Lato-Regular";
+		font-size: 1.2rem;
+		border: none;
+		display: inline-block;
+		width: 150px;
+		background: transparent;
+		@include placeholder($white);
+	}
+}

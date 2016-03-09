@@ -1,0 +1,141 @@
+/* Modals
+   ========================================================================== */
+
+.modal {
+	z-index: 9999999;
+	background: rgba(0, 0, 0, 0.4);
+
+	.vertical-alignment-helper {
+	    display:table;
+	    height: 100%;
+	    width: 100%;
+	    pointer-events:none;
+	}
+
+	.vertical-align-center {
+	    display: table-cell;
+	    vertical-align: middle;
+	    pointer-events:none;
+	}
+
+}
+
+.send-modal {
+
+	.modal-content {
+	    width:inherit;
+	    height:inherit;
+	    margin: 0 auto;
+	    pointer-events: all;
+	    border-radius: 0;
+		height: auto;
+		padding: 20px 50px;
+	}
+
+	.modal-text {
+		font-family: "Lato-Regular";
+	}
+
+	.modal-close {
+		color: $blue;
+	}
+
+	.hr-black {
+		border-color: $black;
+		margin-top: 50px;
+	}
+}
+
+.signup-modal {
+
+	.modal-content {
+	    width:inherit;
+	    height:inherit;
+	    margin: 0 auto;
+	    pointer-events: all;
+	    border-radius: 0;
+		height: auto;
+		padding: 20px 50px;
+	}
+
+	.modal-text {
+		color: $blue;
+		display: inline-block;
+	}
+
+	.small {
+		font-family: "Lato-Italic";
+		margin-bottom: 20px;
+		display: block;
+		color: $font-gray;
+	}
+
+	.box-close {
+		float: right;
+		padding: 8px;
+		color: $gray;
+		font-family: "Lato-Regular";
+		margin-top: 2px;
+
+		&:hover {
+			opacity: 1;
+			color: darken($white, 10%);
+			transition: 0.2s ease-out;
+		}
+	}
+
+	.modal-close {
+		color: $blue;
+	}
+
+	.signup-input {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+
+		&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			color: $font-black;
+		}
+
+		&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color: $font-black;
+			opacity:  1;
+		}
+
+		&::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color: $font-black;
+			opacity:  1;
+		}
+
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: $font-black;
+		}
+
+		&:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+			color: $font-black;
+		}
+	}
+
+	.-textarea {
+		min-height: 150px;
+		max-height: 150px;
+		max-width: 100%;
+	}
+
+	.singup-info {
+		font-family: "Lato-Italic";
+
+		span {
+			display: block;
+		}
+	}
+
+	.hr-black {
+		border-color: $black;
+	}
+
+	.close-container {
+		display: block;
+	}
+}

@@ -1,0 +1,86 @@
+/* Typography
+   ========================================================================== */
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato-Italic;
+    src: url(../fonts/Lato-Italic.ttf);
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	padding-top: 80px;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato-Bold";
+}
+
+h1 { font-size: 3.6rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+p { font-size: 1.4rem; }
+
+li, a, p {
+	font-family: "Lato-Regular";
+}
+
+input, textarea {
+	border: 1px solid $gray;
+	outline: none;
+}
+
+button:focus, input:focus {
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+ul {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+li {
+	font-size: 1.4rem;
+}
+
+table {
+	font-family: "Lato-Regular";
+	font-size: 1.4rem;
+}
+
+th {
+	font-weight: normal;
+}
+
+label {
+	font-family: "Lato-Regular";
+	font-size: 1.4rem;
+}

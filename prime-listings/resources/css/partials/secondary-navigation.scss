@@ -1,0 +1,52 @@
+/* Secondary Navigation
+   ========================================================================== */
+
+.secondary-navigation {
+	background-color: $gray;
+	height: auto;
+	padding: 15px 0;
+	display: none;
+	margin-top: 80px;
+
+	li {
+		display: inline-block;
+
+		&.active {
+			a {
+				border-bottom: 0.2rem solid $white;
+				padding-bottom: 0.5rem;
+			}
+		}
+	}
+
+	a {
+		color: $white;
+		padding: 0 5px;
+	}
+
+	a:hover {
+		opacity: 1;
+		border-bottom: 0.2rem solid $white;
+		padding-bottom: 0.5rem;
+	}
+
+	li {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.secondary-navigation {
+		li {
+			display: none;
+
+			&.active {
+				display: inline;
+
+				a {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

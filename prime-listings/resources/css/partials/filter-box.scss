@@ -1,0 +1,118 @@
+/* Filter Box
+   ========================================================================== */
+
+.filter-box {
+	position: absolute;
+	width: 100%;
+	border: 1px solid $gray;
+	padding: 20px;
+	z-index: 9999;
+	background-color: $white;
+
+	.filter-row {
+		padding-bottom: 25px;
+	}
+
+	.filter-label {
+		margin: 0;
+		padding-bottom: 15px;
+	}
+
+	.checkbox-group {
+		float: left;
+		padding-bottom: 10px;
+	}
+
+	input[type=checkbox] {
+		float: left;
+		display: inline-block;
+		margin: 0 10px 0 0;
+	    -webkit-appearance:button;
+	    background-color: $white;
+	    color: red;
+	    width: 20px;
+	    height: 20px;
+	    cursor: pointer;
+
+	    &:focus {
+	    	outline: none;
+	    }
+	}
+
+	input[type=checkbox]:checked {
+	    background-color: $blue;
+	    transition: all 0.2s ease-out;
+	}
+
+	.checkbox-label {
+		float: left;
+		margin: 0 10px 0 0;
+		font-family: "Lato-Light";
+		display: inline-block;
+	}
+
+	.filter-button {
+		background-color: $blue;
+		border: 1px solid $blue;
+		border-radius: 2px;
+		color: white;
+		font-family: "Lato-Regular";
+		font-size: 1.4rem;
+		padding: 5px 10px;
+		margin-top: 30px;
+
+		&:hover {
+			background-color: darken($blue, 10%);
+			border-color: darken($blue, 10%);
+			transition: all 0.2s ease-out;
+		}
+	}
+}
+
+.filter-modal {
+	position: fixed;
+	z-index: 999999999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow-y: auto;
+	background-color: white;
+
+	.content {
+		position: relative;
+		overflow: hidden;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.box-header {
+		padding: 12px 5px;
+		color: $white;
+		background-color: $blue;
+	}
+
+	.box-heading {
+		font-family: "Lato-Regular";
+	}
+
+	.box-close {
+		float: right;
+		padding: 8px;
+		color: $white;
+		font-family: "Lato-Regular";
+
+		&:hover {
+			opacity: 1;
+			color: darken($white, 10%);
+			transition: 0.2s ease-out;
+		}
+	}
+
+	.filter-box {
+		position: relative !important;
+		border: none;
+	}
+}

@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Merriweather Light";
+  src: url("fonts/Merriweather-Light.otf");
+}
+
+.background-gray{
+	background-color: #F7F2F3;
+	background-size: cover;
+	color: white;
+	height: 700px;
+}
+
+.events-calendar{
+	color: #252525;
+	background-color: white;
+	margin-left: 0px !important;
+	height: 600px;
+	padding: 0px 25px;
+	margin-top: 64px;
+}
+
+.border-line-with-red-events{
+	border-top: 5px solid #093E20;
+	border-bottom: 5px solid #5A141C;
+	height: 12px;
+	width: 140px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 70px;
+}
+
+.section-title {
+	margin-left: 30px;
+}
+
+.events-calendar p{
+	font-family: "Merriweather Regular";
+	font-size: 16px;
+	margin-left: 30px;
+}
+
+.calendar img {
+	height: 300px;
+	margin-left: 25px;
+}
+
+.event-photo img {
+	height: 200px;
+	padding: 0px !important;
+}
+
+.event-photo {
+	padding: 0px !important;
+}
+
+.events-feeds{
+	color: #252525;
+	background-color: #F7F2F3;
+	margin-top: 64px;
+	padding: 0px 25px;
+	border-top: solid 2px gray;
+	border-bottom: solid 2px gray;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.event-title {
+	font-weight: 600;
+	font-family: "Proxima Bold";
+	font-size: 36px;
+	margin-left: 110px;
+	margin-bottom: 0px !important;
+}
+
+.events-feeds h3{
+	font-family: "Merriweather Light";
+	font-size: 20px;
+	margin-left: 120px;
+	margin-top: 0px !important;
+}
+
+.events-feeds p{
+	font-family: "Merriweather Regular";
+	font-size: 16px;
+	margin-left: 110px;
+}
+
+.event-holder {
+	height: 600px;
+	margin-top: 64px;
+	border-left: solid 2px gray;
+	border-right: solid 2px gray;
+	padding: 0px !important;
+}

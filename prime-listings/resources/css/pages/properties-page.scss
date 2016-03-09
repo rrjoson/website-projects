@@ -1,0 +1,124 @@
+/* Properties Page
+   ========================================================================== */
+
+.properties-section {
+	padding: 50px 0 0;
+
+	a:hover {
+		opacity: 1;
+	}
+
+	.section-title {
+		color: $font-gray;
+		margin: 0 0 35px;
+	}
+
+	.city-img {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	.city-heading {
+		margin: 0 0 25px;
+	}
+
+	.city-description {
+		margin-bottom: 35px;
+	}
+
+	.img-container {
+		position: relative;
+	}
+
+	.inner-img {
+		width: 100%;
+	}
+
+	.overlay {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    transition: all 0.2s ease-out;
+
+	    .text {
+			opacity: 0;
+			color: $font-white;
+			padding: 0 20px;
+			text-align: center;
+			line-height: 3.2rem;
+			display: block;
+			transition: all 0.2s ease-out;
+
+			&.-small {
+				font-size: 1.4rem;
+			}
+
+			&.-opaque {
+				opacity: 1;
+			}
+		}
+
+		.sub-text {
+			font-family: "Lato-Italic";
+			color: $white;
+			font-size: 1.4rem;
+			display: block;
+		}
+	}
+
+	.image-item {
+		margin-bottom: 35px;
+
+		&:hover {
+			.overlay {
+			    background: rgba(0, 0, 0, 0.4);
+			}
+
+		    .text {
+		    	opacity: 1;
+		    }
+		}
+	}
+
+	.property-name {
+		color: $font-black;
+		margin: 15px 0 0;
+	}
+
+	.property-type {
+		color: $font-black;
+		font-family: "Lato-Italic";
+		font-size: 1.4rem;
+	}
+
+	.view-all {
+		color: $font-white;
+		font-family: "Lato-Bold";
+		font-size: 1.4rem;
+		background-color: $blue;
+		padding: 15px 20px;
+		display: inline-block;
+		margin-top: 35px;
+		border-radius: 2px;
+
+		&:hover {
+			background-color: darken($blue, 10%);
+			border-color: darken($blue, 10%);
+			transition: 0.2s ease-out;
+		}
+	}
+
+	.no-results-heading {
+		color: $gray;
+		margin-top: 0;
+	}
+
+	.no-results-text {
+		color: $blue;
+	}
+}

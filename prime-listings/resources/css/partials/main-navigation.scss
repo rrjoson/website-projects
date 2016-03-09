@@ -1,0 +1,63 @@
+/* Main Navigation
+   ========================================================================== */
+
+.main-navigation {
+	background-color: $black;
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99999;
+	transition: all 0.3s ease-out;
+	border-bottom: 1px solid black;
+
+	&.-transparent {
+		background: transparent;
+		border-bottom: none;
+	}
+
+	a {
+		color: $white;
+	}
+
+	a:hover {
+		opacity: 1;
+		text-decoration: underline;
+	}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+		background-color: $white;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.default-nav {
+		li {
+			display: inline-block;
+			padding: 15px 5px;
+			font-size: 1.25rem;
+		}
+	}
+
+	.mobile-nav {
+		li {
+			display: block;
+			padding: 15px 0;
+		}
+	}
+
+	.mobile-toggler {
+		display: inline-block;
+		color: #ffffff;
+    	padding: 8px 15px 8px 0;
+    	background-color: transparent;
+    	border: none;
+    	font-size: 1.8rem;
+	}
+
+	.active {
+		text-decoration: underline;
+	}
+}

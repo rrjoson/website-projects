@@ -1,0 +1,415 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Prime Listings</title>
+		<link rel="stylesheet" href="resources/css/style.css">
+	</head>
+	<body>
+		<div class="fsd-wrap">
+			<div class="content-wrap">
+
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<!--******************MAIN NAVIGATION****************-->
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<nav class="main-navigation">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-1">
+								<a href="homepage.html">
+									<div class="hidden-xs logo"></div>
+								</a>
+							</div>
+							<div class="col-sm-5">
+								<button class="mobile-toggler hidden-sm hidden-lg hidden-md navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggle">☰</button>
+
+								<!--*************************************************-->
+								<!--******************SEARCH FORM********************-->
+								<!--*************************************************-->
+								<div class="search-form -main">
+									<span class="icon icon-search"></span>
+									<input type="text" placeholder="Where do you want to live?" class="search-text" value="">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div id="nav-toggle" class="collapse">
+
+									<!--*************************************************-->
+									<!--******************MOBILE MENU********************-->
+									<!--*************************************************-->
+									<ul class="mobile-nav hidden-sm hidden-md hidden-lg">
+										<li class=""><a href="homepage.html">HOME</a></li>
+										<li class=""><a href="about.html">ABOUT</a></li>
+										<li class=""><a href="location.html">LOCATION</a></li>
+										<li class=""><a href="contact.html">CONTACT</a></li>
+									</ul>
+								</div>
+
+								<!--*************************************************-->
+								<!--******************DESKTOP MENU*******************-->
+								<!--*************************************************-->
+								<ul class="default-nav _pull-right hidden-xs">
+									<li class=""><a href="homepage.html">HOME</a></li>
+									<li class=""><a href="about.html">ABOUT</a></li>
+									<li class=""><a href="location.html">LOCATION</a></li>
+									<li class=""><a href="contact.html">CONTACT</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<!--******************FILTER BAR*********************-->
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<nav class="filter-bar">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-8 col-md-6">
+								<div class="dropdown">
+									<a data-toggle="collapse" href="#collapse1" class="filter-toggle hidden-xs">
+										FILTER
+										<span class="icon-chevron-thin-down"></span>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="_pull-right _sm-pull-right">
+									<h4 class="current-city">MAKATI</h4>
+									<div class="button-group">
+										<a href="maps.html" class="button-small -active">
+											<span class="icon-location"></span>
+											MAP
+										</a>
+										<a href="filter.html" class="button-small">
+											<span class="icon-list"></span>
+											LIST
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<!--******************FILTER BOX*********************-->
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<div id="collapse1" class="hidden-xs filter-box panel-collapse collapse">
+					<div class="container">
+						<div class="row filter-row">
+							<div class="col-sm-3 col-xs-12">
+								<h5 class="filter-label">Project Type:</h5>
+							</div>
+							<div class="col-sm-9 col-xs-12">
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">ALL</label>
+								</div>
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">House and location</label>
+								</div>
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">Commercial</label>
+								</div>
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">ALL</label>
+								</div>
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">House and location</label>
+								</div>
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">Commercial</label>
+								</div>
+							</div>
+						</div>
+						<div class="row filter-row">
+							<div class="col-sm-3">
+								<h5 class="filter-label">Status:</h5>
+							</div>
+							<div class="col-sm-9">
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">Pre-Selling</label>
+								</div>
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">For Sale</label>
+								</div>
+								<div class="checkbox-group">
+									<input type="checkbox" name="" value="">
+									<label class="checkbox-label">For Lease</label>
+								</div>
+							</div>
+						</div>
+						<div class="row filter-row">
+							<div class="col-sm-3">
+								<h5 class="filter-label">Price Range:</h5>
+							</div>
+							<div class="col-sm-9">
+								<input type="hidden" class="range-slider slider-input" value="23" />
+							</div>
+						</div>
+						<div class="row filter-row">
+							<div class="col-sm-12">
+								<button href="filter.html" class="filter-button">APPLY FILTER</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="filter-button-sm hidden-sm hidden-md hidden-lg">
+					<button data-toggle="collapse" href="#collapse2" class="btn-block filter-btn">FILTER</button>
+				</div>
+
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<!--******************FILTER BOX MODAL***************-->
+				<!--*************************************************-->
+				<!--*************************************************-->
+				<div id="collapse2" class="hidden-md hidden-sm hidden-lg filter-modal panel-collapse collapse">
+					<div class="content">
+						<div class="box-header">
+							<div class="container">
+								<div class="col-xs-6">
+									<h4 class="box-heading">FILTER</h4>
+								</div>
+								<div class="col-xs-6">
+									<a class="box-close" data-toggle="collapse" href="#collapse2">X</a>
+								</div>
+							</div>
+						</div>
+						<div class="filter-box">
+							<div class="container">
+								<div class="row filter-row">
+									<div class="col-sm-3 col-xs-12">
+										<h5 class="filter-label">Project Type:</h5>
+									</div>
+									<div class="col-sm-9 col-xs-12">
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">ALL</label>
+										</div>
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">House and location</label>
+										</div>
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">Commercial</label>
+										</div>
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">ALL</label>
+										</div>
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">House and location</label>
+										</div>
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">Commercial</label>
+										</div>
+									</div>
+								</div>
+								<div class="row filter-row">
+									<div class="col-sm-3">
+										<h5 class="filter-label">Status:</h5>
+									</div>
+									<div class="col-sm-9">
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">Pre-Selling</label>
+										</div>
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">For Sale</label>
+										</div>
+										<div class="checkbox-group">
+											<input type="checkbox" name="" value="">
+											<label class="checkbox-label">For Lease</label>
+										</div>
+									</div>
+								</div>
+								<div class="row filter-row">
+									<div class="col-sm-3">
+										<h5 class="filter-label">Price Range:</h5>
+									</div>
+									<div class="col-sm-9">
+										<input type="hidden" class="range-slider slider-input" value="23" />
+									</div>
+								</div>
+								<div class="row filter-row">
+									<div class="col-sm-12">
+										<button href="filter.html" class="filter-button">APPLY FILTER</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="filter-map">
+
+				</div>
+			</div>
+
+			<!--*************************************************-->
+			<!--*************************************************-->
+			<!--******************FOOTER*************************-->
+			<!--*************************************************-->
+			<!--*************************************************-->
+			<div class="footer-wrap">
+				<footer class="main-footer _remove-margin">
+				    <div class="container">
+				    	<div class="row">
+				    		<div class="col-md-6 col-sm-12 col-xs-12">
+				    			<div class="col-sm-4 col-xs-6">
+				    				<h5 class="title">PRIME LISTINGS</h5>
+				    				<ul>
+				    					<li><a href="#!">About</a></li>
+				    					<li><a href="#!">Contact</a></li>
+				    					<li><a href="#!">Category A</a></li>
+				    					<li><a href="#!">Category B</a></li>
+				    					<li><a href="#!">Category C</a></li>
+				    				</ul>
+				    			</div>
+				    			<div class="col-sm-4 col-xs-6">
+				    				<h5 class="title">LOCATION</h5>
+				    				<ul>
+				    					<li><a href="#!">ALL</a></li>
+				    					<li><a href="#!">Global City</a></li>
+				    					<li><a href="#!">Makati</a></li>
+				    					<li><a href="#!">Eastwood</a></li>
+				    					<li><a href="#!">Manila</a></li>
+				    					<li><a href="#!">Quezon City</a></li>
+				    				</ul>
+				    			</div>
+				    			<div class="col-sm-4 col-xs-6">
+				    				<h5 class="title">PROPERTIES</h5>
+				    				<ul>
+				    					<li><a href="#!">ALL</a></li>
+				    					<li><a href="#!">PROPERTY A</a></li>
+				    					<li><a href="#!">PROPERTY B</a></li>
+				    					<li><a href="#!">PROPERTY C</a></li>
+				    					<li><a href="#!">PROPERTY D</a></li>
+				    					<li><a href="#!">PROPERTY E</a></li>
+				    				</ul>
+				    			</div>
+				    		</div>
+				    		<div class="col-md-6 col-sm-12 col-xs-12">
+				    			<div class="signup-section">
+				    				<div class="_sm-pull-left col-md-6 col-sm-6 col-xs-12">
+				    					<h4 class="title">WHY SIGN UP?</h4>
+				    					<p>KNOW THE OPPORTUNITIES, LATEST PROPERTIES IN YOUR TARGET NEIGHBORHOOD, AND VALUE OF YOUR HOME</p>
+				    				</div>
+				    				<div class="_sm-pull-left col-md-6 col-sm-6 col-xs-12 _text-center">
+				    					<button data-toggle="modal" data-target="#signup-modal" class="signup-button">SIGN UP</button>
+				    				</div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="social-row row _text-center">
+				    		<h5 class="title">CONNECT WITH US</h5>
+				    		<ul>
+				    			<li><a href="#!"><span class="icon-twitter"></span></a></li>
+				    			<li><a href="#!"><span class="icon-facebook"></span></a></li>
+				    			<li><a href="#!"><span class="icon-youtube"></span></a></li>
+				    			<li><a href="#!"><span class="icon-google"></span></a></li>
+				    			<li><a href="#!"><span class="icon-instagram"></span></a></li>
+				    		</ul>
+				    	</div>
+				    	<hr class="hr-gray">
+				    	<div class="copyright _text-center">
+				    		<p>COPYRIGHT 2015. BUILT WITH LOVE BY <a href="http://www.potatocodes.com">POTATOCODES</a></p>
+				    	</div>
+				    </div>
+				</footer>
+			</div>
+		</div>
+
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<!--******************SIGNUP LIGHTBOX****************-->
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<div id="signup-modal" class="signup-modal modal fade" role="dialog">
+			<div class="vertical-alignment-helper">
+				<div class="vertical-align-center modal-dialog">
+					<div class="modal-content">
+						<h4 class="modal-text">BE UPDATED! SIGNUP NOW</h4>
+						<a class="box-close" href="#!" data-dismiss="modal">X</a>
+						<small class="small">*Kindly fill in the fields below</small>
+						<input class="signup-input" placeholder="NAME" type="text">
+						<input class="signup-input" placeholder="CONTACT NUMBER" type="text">
+						<input class="signup-input" placeholder="EMAIL ADDRESS" type="text">
+						<input class="signup-input" placeholder="PROPERTY YOU WANT TO BE UPDATED" type="text">
+						<textarea placeholder="MESSAGE" class="signup-input -textarea"></textarea>
+						<p class="singup-info">
+							<span>For inquiries, please email us at</span>
+							<span>jdelacruz@remax.ph | +69175324173</span>
+							<span>or visit us at</span>
+							<span>Address of primelistings</span>
+						</p>
+						<hr class="hr-black">
+						<div class="close-container _text-center">
+							<a class="modal-close" data-dismiss="modal" href="">SIGNUP</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<!--******************SCRIPTS************************-->
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+		<script src="resources/js/bootstrap.min.js"></script>
+		<script src="resources/js/jquery.range.js"></script>
+
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<!--******************FILTER TOGGLE******************-->
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<script type="text/javascript">
+			$('.filter-toggle').on('click', function() {
+			    $(this).find('span').toggleClass('icon-chevron-thin-down icon-chevron-thin-up');
+			});
+		</script>
+
+		<script type="text/javascript">
+			$('.range-slider').jRange({
+			    from: 0,
+			    to: 100,
+			    step: 1,
+			    scale: [0,25,50,75,100],
+			    format: '%s',
+			    width: 300,
+			    showLabels: true,
+			    isRange : true,
+			    theme: 'theme-blue'
+			});
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+		        async defer></script>
+        <script src="resources/js/markerclusterer_compiled.js"></script>
+        <script src="resources/js/back-to-top.js"></script>
+        <script src="resources/data.json"></script>
+		<script src="resources/js/maps.js"></script>
+	</body>
+</html>

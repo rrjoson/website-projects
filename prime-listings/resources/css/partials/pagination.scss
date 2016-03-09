@@ -1,0 +1,33 @@
+/* Pagination
+   ========================================================================== */
+
+.pagination {
+
+	li {
+		display: inline;
+
+		&.-active {
+
+			a {
+				color: $white;
+				background: $blue;
+				cursor: default;
+			}
+		}
+	}
+
+	a {
+		float: left;
+		margin: 0 5px 5px 0;
+		padding: 5px 10px;
+		border: 1px solid $blue;
+		color: $black;
+		border-radius: 2px;
+
+		&:hover {
+			background-color: $blue;
+			color: $white;
+			transition: 0.2s ease-out;
+		}
+	}
+}

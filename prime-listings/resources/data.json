@@ -1,0 +1,9 @@
+var data = {
+"properties" : [
+{'name': 'Kroma Towers', 'latitude': 14.5800, 'longitude': 121.0100, 'image': 'https://s3.amazonaws.com/nooklyn-pro/neighborhoods/21/medium/IMG_7730.JPG?1449361303', 'type': 'Prime Condominium', 'link': 'indiv.html'},
+{'name': 'Kroma Towers', 'latitude': 14.5800, 'longitude': 121.0200, 'image': 'https://s3.amazonaws.com/nooklyn-pro/neighborhoods/21/medium/IMG_7730.JPG?1449361303', 'type': 'Prime Condominium', 'link': 'indiv.html'},
+{'name': 'Kroma Towers', 'latitude': 14.5800, 'longitude': 121.0300, 'image': 'https://s3.amazonaws.com/nooklyn-pro/neighborhoods/21/medium/IMG_7730.JPG?1449361303', 'type': 'Prime Condominium', 'link': 'indiv.html'},
+{'name': 'Kroma Towers', 'latitude': 14.5800, 'longitude': 121.0400, 'image': 'https://s3.amazonaws.com/nooklyn-pro/neighborhoods/21/medium/IMG_7730.JPG?1449361303', 'type': 'Town House', 'link': 'indiv.html'},
+{'name': 'Kroma Towers', 'latitude': 14.5800, 'longitude': 121.0500, 'image': 'https://s3.amazonaws.com/nooklyn-pro/neighborhoods/21/medium/IMG_7730.JPG?1449361303', 'type': 'Prime Hotel', 'link': 'indiv.html'},
+]
+};

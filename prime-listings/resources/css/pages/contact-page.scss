@@ -1,0 +1,84 @@
+/* Contact Page
+   ========================================================================== */
+
+.contact-section {
+	margin: 50px 0 0;
+
+	textarea:focus, input:focus {
+		opacity: 0.7;
+		transition: 0.2s ease-out;
+	}
+
+	.contact-icon {
+		font-size: 80px;
+		color: $blue;
+		display: block;
+	}
+
+	.sub-text {
+		display: block;
+		font-family: "Lato-Italic";
+		font-size: 1.4rem;
+		color: $gray;
+	}
+
+	.contact-label {
+		display: block;
+		width: 100%;
+	}
+
+	.contact-input {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+
+		&.-textarea {
+			min-height: 150px;
+			max-height: 150px;
+			max-width: 100%;
+		}
+	}
+
+	.hr-gray {
+		border-color: $gray;
+	}
+
+	.send-btn {
+		background-color: $blue;
+		color: white;
+		border: 1px solid $blue;
+		display: inline-block;
+		font-family: "Lato-Bold";
+		font-size: 1.8rem;
+		padding: 5px 20px;
+		border-radius: 2px;
+		margin-top: 15px;
+
+		&:hover {
+			background-color: darken($blue, 10%);
+			border-color: darken($blue, 10%);
+			transition: 0.2s ease-out;
+		}
+	}
+
+	.office-location {
+		margin-bottom: 50px;
+	}
+
+	.details-box {
+		margin-bottom: 30px;
+	}
+
+	.details {
+		font-family: "Lato-Regular";
+		margin: 0 0 5px;
+
+		&.-heading {
+			border-bottom: 2px solid $black;
+			display: inline-block;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+		}
+	}
+}

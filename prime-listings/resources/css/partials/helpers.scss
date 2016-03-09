@@ -1,0 +1,15 @@
+/* Helpers
+   ========================================================================== */
+
+._pull-left { float: left !important; }
+._pull-right { float: right !important; }
+._text-center { text-align: center !important; }
+._remove-padding { padding: 0 !important; }
+._remove-margin { margin: 0 !important; }
+
+@media screen and (max-width: 767px) {
+	._sm-padding-rm { padding: 0; }
+	._sm-text-center { text-align: center !important; }
+	._sm-pull-left { float: left !important; }
+	._sm-pull-right { float: right !important; }
+}

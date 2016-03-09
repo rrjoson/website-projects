@@ -1,0 +1,873 @@
+@font-face {
+  font-family: "Proxima Light";
+  src: url("fonts/ProximaLight.otf");
+}
+@font-face {
+  font-family: "Proxima Bold";
+  src: url("fonts/ProximaBold.otf");
+}
+@font-face {
+  font-family: "Proxima Regular";
+  src: url("fonts/ProximaRegular.otf");
+}
+@font-face {
+  font-family: "Proxima Semibold";
+  src: url("fonts/ProximaSemibold.otf");
+}
+@font-face {
+  font-family: "Proxima Extrabold";
+  src: url("fonts/ProximaExtrabold.otf");
+}
+@font-face {
+  font-family: "Merriweather Light";
+  src: url("fonts/Merriweather-Light.otf");
+}
+@font-face {
+  font-family: "Merriweather Regular";
+  src: url("fonts/Merriweather-Regular.otf");
+}
+@font-face {
+  font-family: "Merriweather Bold";
+  src: url("fonts/Merriweather-Bold.otf");
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url("fonts/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url("fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato Light";
+  src: url("fonts/Lato-Light.ttf");
+}
+/* HEADER */
+.header-row{
+  background-color: #954142;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 1;
+}
+.header-row button{
+  background-color: #59151C;
+  float: right;
+  height: 65px;
+  width: 70px;
+  padding: 0;
+  border: none;
+  margin-right: 120px;
+}
+.header-row i{
+  color: white;
+}
+
+/* GENERAL */
+.test{
+  border: 2px solid black;
+  background-color: white;
+  width: 100%;
+  min-height: 1000px;
+}
+.left-sidebar{
+  padding-top: 60px;
+  background-color: #FFFFFF;
+}
+.event-sidebar-top{
+  padding-left: 50px;
+}
+.border-line{
+  border-top: 5px solid #093E20;
+  border-bottom: 5px solid #59151C;
+  width: 130px;
+  margin: 10px 0px 10px 0px;
+  height: 11px;
+}
+.left-sidebar-heading{
+  font-family: "Lato Bold";
+}
+.left-sidebar-content{
+  font-family: "Merriweather Light";
+  padding: 30px 0px 70px 0px;
+}
+.remove-padding{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.remove-margin{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+a{
+  text-decoration: none !important;  
+}
+.move-down{
+  margin-top: 65px;
+}
+
+/* PUSHMENU */
+#pushmenu-downloads{
+  background-color: lightgray;
+  color: white;
+}
+#pushmenu-contact{
+  background-color: #59151C;
+  color: white;
+}
+
+/* CONTENT */
+.page-header-title{
+  font-family: "Lato Bold";
+  font-size: 32px;
+}
+.subtitle{
+  font-size: 24px;
+  font-family: "Lato Bold";
+}
+.main-content{
+  font-size: 18px;
+}
+
+/* HOMEPAGE-1 */
+.homepage-1{
+  background: url('images/HOMEPAGE/slider.png') no-repeat 100% 0% fixed;
+  background-size: cover;
+  height: 700px;
+  color: white;
+}
+.announcement-box{
+  position: absolute;
+  left: 145px;
+  top: 300px;
+  width: 350px;
+  color: #093E20;
+}
+.announcement-relative{
+  position: relative;
+}
+.announcement-opacity{
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 1;
+}
+.announcement-content{
+  z-index: 2;
+  position: relative;
+  height: 320px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+.announcement-title{
+  font-family: "Merriweather Regular";
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.announcement-date{
+  font-family: "Lato Light";
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.announcement-snippet{
+  font-family: "Lato Light";
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.announcement-content .row{
+  margin-right: 25px;
+}
+.announcement-button{
+  font-family: "Lato Light";
+  font-size: 16px;
+  background-color: #093F20;
+  width: 110px;
+  color: white;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  float: right;
+}
+
+/* HOMEPAGE-2 */
+.homepage-2{
+  background-color: white;
+  height: 400px;
+}
+.homepage-about-title{
+  font-family: "Lato Bold";
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.homepage-about-bar{
+  border-top: 6px solid #093E20;
+  border-bottom: 6px solid #093E20;
+  width: 220px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.homepage-about-content{
+  font-family: "Merriweather Light";
+  color: #696868;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+/* HOMEPAGE-3 */
+.homepage-3{
+  background: url('images/HOMEPAGE/calltoaction_photo.png') no-repeat 0% fixed;
+  background-size: cover;
+  height: 450px;
+}
+.call-image{
+  margin: 30px;
+}
+.call-title{
+  font-family: "Lato Regular";
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.call-title h2{
+  line-height: 40%; 
+}
+.call-content{
+  color: white;
+  font-family: "Merriweather Regular";
+  margin-left: 30px;
+  height: 85px;
+}
+.call-line{
+  border-right: 3px solid white;
+  border-left: 3px solid white;
+  height: 90px;
+}
+.call-button{
+  font-family: "Lato Bold";
+  font-size: 18px;
+  background-color: #093F20;
+  width: 150px;
+  padding: 10px 10px 10px 15px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+/* HOMEPAGE-4 */
+.homepage-4{
+  background-color: white;
+  height: 1100px;
+}
+.homepage-news-title{
+  font-family: "Lato Bold";
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.homepage-news-bar{
+  border-top: 6px solid #59151C;
+  border-bottom: 6px solid #093E20;
+  width: 290px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.homepage-news-card{
+  background-color: white;
+  width: 300px;
+  height: 230px;
+  z-index: 2;
+  position: absolute;
+  left: -70px;
+}
+.homepage-news-card a{
+  text-decoration: none;
+  color: white;
+}
+.homepage-news-card a:hover{
+  text-decoration: none;
+  color: white;
+}
+.card-1{
+  background-color: #093E20;
+  color: white;
+}
+.card-2{
+  top: -142px;
+  background-color: #59151C;
+  color: white;
+}
+.card-2 .card-type{
+  color: #59151C;
+}
+.card-3{
+  left: 268px;
+  bottom: 0px;
+  width: 450px;
+  height: 285px;
+  background-color: white;
+  color: #093E20;
+}
+.card-3 .card-date{
+  font-family: "Lato Regular";
+  font-size: 24px;
+  margin-top: 25px;
+}
+.card-3 .card-type{
+  color: white;
+  background-color: #093E20;
+  font-size: 18px;
+  width: 80px;
+  padding: 8px;
+  float: left;
+  margin-top: 25px;
+}
+.card-3 .card-bar{
+  border-bottom: 5px solid #093E20;
+  width: 70px;
+  margin-left: 15px;
+}
+.card-3 .card-heading{
+  font-size: 22px;
+  margin-right: 80px;
+  font-family: "Lato Bold";
+  margin-top: 15px;
+}
+.card-3 .card-snippet{
+  color: gray;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 60px;
+}
+.card-3 .card-more{
+  font-size: 18px;
+  margin-right: 30px;
+}
+.card-3 a{
+  text-decoration: none;
+  color: #093E20;
+}
+.card-3 a:hover{
+  text-decoration: none;
+  color: #093E20;
+}
+.card-4{
+  left: 131px;
+  height: 285px;
+  top: -284px;
+  background-color: #59151C;
+  color: white;
+}
+.card-4 .card-type{
+  color: #59151C;
+}
+.card-date{
+  font-family: "Lato Light";
+  font-size: 18px;
+  margin-top: 20px;
+}
+.card-type{
+  font-family: "Lato Regular";
+  color: #093E20;
+  background-color: white;
+  text-align: center;
+  width: 70px;
+  padding: 5px;
+  margin-top: 17px;
+}
+.card-bar{
+  border-bottom: 4px solid white;
+  width: 60px;
+  margin-left: 15px;
+}
+.card-heading{
+  font-family: "Lato Regular";
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.card-snippet{
+  font-family: "Merriweather Light";
+  font-size: 16px;
+  color: lightgray;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.card-more{
+  font-family: "Lato Bold";
+  margin-top: 10px;
+  float: right;
+}
+.homepage-news-button{
+  font-family: "Lato Light";
+  font-size: 18px;
+  color: white;
+  background-color: #093E20;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  float: right;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+/* TRIANGLES */
+.card-1-triangle{
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  border-right: 40px solid #093E20; 
+  position: absolute;
+  left: -40px;
+  top: 25px;
+}
+.card-2-triangle{
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  border-left: 40px solid #59151C; 
+  position: absolute;
+  left: 300px;
+  top: 25px;
+}
+.card-3-triangle{
+  width: 0; 
+  height: 0; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  border-right: 40px solid white; 
+  position: absolute;
+  left: -55px;
+  top: 25px;
+}
+.card-4-triangle{
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent; 
+  border-bottom: 40px solid #59151C; 
+  position: absolute;
+  left: 80px;
+  top: -30px;
+}
+
+/* ABOUT-1 */
+.about-1{
+  background: url('images/ABOUT/about_header.png') no-repeat 100% 0% fixed;
+  background-size: cover;
+  height: 380px;
+  color: white;
+}
+.about-ngohs{
+  margin-top: 290px;
+  margin-left: 20px;
+}
+
+/* ABOUT-2 */
+.about-triangle{
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent; 
+  border-bottom: 40px solid white; 
+  position: absolute;
+  left: 50px;
+  top: -30px;
+}
+.about-bar{
+  border-top: 6px solid #093E20;
+  border-bottom: 6px solid #59151C;
+  width: 280px;
+  height: 13px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.about-2-heading{
+  margin-bottom: 30px;
+}
+.about-2-history-date{
+  font-family: "Lato Regular";
+  font-size: 18px;
+}
+.about-2-history-content{
+  font-family: "Lato Light";
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.about-1-links{
+  font-family: "Lato Regular";
+  font-size: 24px;
+  margin-top: 230px;
+}
+.about-1-links div{
+  background-color: #E5E5E5;
+  width: 55px;
+  padding: 10px 20px 5px 20px;
+  margin-bottom: 3px;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+.about-1-links a:hover div{
+  background-color: #59151C
+}
+
+/* ABOUT-3 */
+.about-3-heading{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about-3-heading a{
+  text-decoration: none;
+  color: black;
+}
+.about-3-heading a:hover{
+  text-decoration: none;
+  color: black;
+}
+.about-3-content-1{
+  font-family: "Lato Light";
+  padding-left: 35px;
+  margin-right: 30px;
+  padding-bottom: 30px;
+}
+.about-3-list{
+  font-family: "Lato Regular";
+}
+.about-3-list-n{
+  padding-left: 70px;
+}  
+.about-3-list-content{
+  padding-right: 130px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+.about-3-content-2{
+  font-family: "Lato Regular";
+  padding-bottom: 40px;
+  padding-left: 35px;
+
+}
+
+/* ABOUT-4 */
+.about-4-heading{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about-4-heading a{
+  text-decoration: none;
+  color: black;
+}
+.about-4-heading a:hover{
+  text-decoration: none;
+  color: black;
+}
+.about-4-content-1{
+  font-family: "Lato Light";
+  padding-left: 35px;
+  margin-right: 100px;
+  padding-bottom: 30px;
+}
+.about-4-list{
+  font-family: "Lato Regular";
+}
+.about-4-list-n{
+  padding-left: 70px;
+}  
+.about-4-list-content{
+  padding-right: 80px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+/* ABOUT-5 */
+.about-5-heading{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about-5-heading a{
+  text-decoration: none;
+  color: black;
+}
+.about-5-heading a:hover{
+  text-decoration: none;
+  color: black;
+}
+.about-5-list{
+  font-family: "Lato Regular";
+}
+.about-5-list ul{
+  list-style-type: none;
+  padding-left: 90px;
+}
+.about-5-list ul li{
+  padding-bottom: 5px;
+}
+.about-5-download{
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.about-5-download a{
+  font-style: italic;
+  color: #59151C;
+}
+.about-5-download a:hover{
+  color: #59151C;
+}
+
+/* INDIVEVENT */
+.indivevent-img{
+  width: 100%;
+  height: auto;
+}
+.indivevent-border-line{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.indivevent-snippet{
+  font-family: "Merriweather Light";
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.indivevent-button{
+  font-size: 18px;
+  font-family: "Lato Light";  
+  background-color: #59151C;
+  width: 100px;
+  color: white;
+  text-align: center; 
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  float: right;
+}
+.indivevent-share-buttons{
+  float: right;
+  margin-bottom: 30px;
+}
+.indivevent-title{
+  font-family: "Lato Bold";
+}
+.indivevent-arrow{
+  height: 80px;
+  width: auto;
+}
+.indivevent-card{
+  margin: 0px 0px 30px 0px;
+  border-bottom: 2px solid #F5F5F5;
+}
+.indivevent-bg{
+  background-color: #F5F5F5;
+}
+.indivevent-heading{
+  padding-top: 60px;
+  color: #59151C;
+}
+.indivevent-date{
+  font-family: "Lato Light";
+  font-size: 18px;
+  padding-bottom: 40px;  
+}
+.indivevent-content{
+  font-family: "Lato Light";  
+}
+.indivevent-content p{
+  padding-bottom: 20px;
+}
+
+/* EVENTS */
+.calendar{
+  width: 100%;
+  height: 100%;
+}
+.calendar img{
+  width: 85%;
+  height: 85%;
+  position: relative;
+  left: 60px;
+}
+.event-body{
+  background-color: #F5F5F5;
+  height: 700px;
+}
+.event-body img{
+  height: 220px;
+  width: auto;
+}
+.event-body .col-md-4{
+  padding: 0px;
+}
+.event-body .col-md-8{
+  left: -30px;
+}
+.event-title{
+  padding-top: 20px;
+}
+.event-date{
+  font-family: "Lato Light";
+  font-size: 16px;
+}
+.event-snippet{
+  font-family: "Merriweather Light";
+  padding-top: 20px;
+}
+.event-body .row{
+  border-bottom: 2px solid lightgray;
+}
+
+/* NO EVENT */
+.no-event{
+  color: black;
+  font-size: 24px;
+  font-family: "Lato Light";
+  padding: 35px 5px 10px 20px;
+}
+
+
+/* ABOUT */
+.contact-info{
+  padding: 30px 0px 20px 0px;
+  left: -20px;
+}
+.contact-info .row{
+  margin: 0px 20px 35px 20px;
+}
+.float-left{
+  float: left;
+  font-family: "Merriweather Bold";
+  color: #333333;
+}
+.float-right{
+  float: right;
+  font-family: "Merriweather Light";
+  color: #333333;
+}
+.fa-facebook{
+  color: #59151C;
+}
+.fa-twitter{
+  color: #59151C;
+}
+.gray-border-bottom{
+  border-bottom: 2px solid #F5F5F5;
+}
+.contact-body{
+  padding-top: 60px;
+  background-color: #F5F5F5;
+  margin-right: -55px;
+}
+.contact-body-header span{
+  color: #59151C;
+}
+.contact-form{
+  padding-bottom: 150px;
+}
+.form{
+  width: 600px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+#full-name{
+  margin-top: 30px;
+}
+#message{
+  height: 300px;
+  padding-bottom: 250px;
+  padding-left: 10px;
+}
+.maroon-button{
+  font-family: "Lato Regular";
+  padding: 10px 20px 10px 20px;
+  width: 120px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #59151C;
+  color: #FFFFFF;
+}
+
+/* FOOTER */
+.footer{
+  background: url('images/FOOTER/footer_photo.png') no-repeat 100% 100% fixed;
+  background-size: contain;
+  height: 400px;
+  width: 100%;
+  color: white;
+}
+.footer-top{
+  padding: 40px;
+}
+.footer-body-1{
+  font-family: "Lato Light";
+  font-size: 20px;
+}
+.footer-body-1 .col-md-1{
+  padding: 1px;
+}
+.ico{
+  padding: 10px;
+  margin-top: -3px;
+}
+.ico img{
+  width: auto;
+  padding: 2px 10px;
+  margin-top: -3px;
+}
+.time-schedule{
+  line-height: 120%; 
+}
+.time-schedule p{
+  padding-left: 60px;
+  margin: 0px;
+  font-family: "Lato Regular";
+}
+.time-schedule li{
+  padding-left: 20px;
+  font-family: "Lato Light";
+  list-style: none;
+  font-size: 18px;
+}
+.white-border-left{
+  border-left: 2px solid white;
+  height: 250px;
+  padding-top: 30px;
+}
+.footer-body-2{
+  font-family: "Lato Light";
+}
+.footer-body-2 p{
+  padding-left: 15px;
+  font-size: 24px;
+  font-family: "Lato Regular";
+}
+.footer-body-2 .col-md-12{
+  margin: 5px;
+  font-size: 18px;
+}
+.icon {
+ display: inline;
+ list-style: none;
+ padding: 20px 15px;
+}
+.footer-bottom{
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: #59151C;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato Light";
+  padding-top: 5px;
+  padding-bottom: 40px;
+}

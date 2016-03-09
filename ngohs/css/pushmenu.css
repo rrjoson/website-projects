@@ -1,0 +1,233 @@
+/* 
+@font-face {
+  font-family: "Proxima Bold";
+  src: url("fonts/ProximaBold.otf");
+} 
+*/
+
+/* footer stay-down */
+html, body {height: 100%;}
+
+#wrapper {min-height: 100%;
+ padding-top: 50px;}
+
+#content {overflow:auto;
+  padding-bottom: 250px;
+  min-height: 900px;
+  }  /* must be same height as the footer */
+
+footer {position: relative;
+  margin-top: -250px; /* negative value of footer height */
+  background-color: #f5f5f5;
+  height: 250px;
+  color: #2e2e2e;
+} 
+
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;
+}
+
+/* DEFAULT MENU */
+header{
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: auto;
+  z-index: 1;
+}
+
+.main-nav{
+  list-style: none;
+  margin-top: 1px;
+  height: 22px;
+}
+
+//.fa{
+  font-size: 60px;
+}
+
+.main-nav li{
+  float: right;
+  padding-right: 150px;
+}
+
+
+.menu-items{
+  float: left;
+}
+
+.show-borders{
+  border: 1px solid black;
+  height: 200px;
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+  background: white;
+  position: fixed;
+  text-align: right;
+}
+
+
+.cbp-spmenu a {
+  display: block;
+  color: #33354A;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+  background: #33354A;
+  color: white;
+  text-decoration: none;
+}
+
+.cbp-spmenu a:active {
+  background: #afdefa;
+  color: white;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+  border-bottom: 1px solid #000011;
+  padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+  width: 100%;
+  height: 150px;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+.cbp-spmenu-horizontal a {
+  float: left;
+  width: 20%;
+  padding: 0.8em;
+  border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+  left: -240px;
+}
+
+.cbp-spmenu-right {
+  right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px;
+}
+
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.cbp-spmenu-push-toright {
+  left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+  left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+  .cbp-spmenu-horizontal {
+    font-size: 75%;
+    height: 110px;
+  }
+
+  .cbp-spmenu-top {
+    top: -110px;
+  }
+
+  .cbp-spmenu-bottom {
+    bottom: -110px;
+  }
+
+}
+
+@media screen and (max-height: 26.375em){
+
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  .cbp-spmenu-left,
+  .cbp-spmenu-push-toleft {
+    left: -190px;
+  }
+
+  .cbp-spmenu-right {
+    right: -190px;
+  }
+
+  .cbp-spmenu-push-toright {
+    left: 190px;
+  }
+}
+
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+  font-family: 'fontawesome';
+  src:url('../fonts/fontawesome.eot');
+  src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+    url('../fonts/fontawesome.woff') format('woff'),
+    url('../fonts/fontawesome.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html { font-size: 100%;   padding: 0; margin: 0;}
+
+

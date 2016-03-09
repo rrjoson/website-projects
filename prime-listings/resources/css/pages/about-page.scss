@@ -1,0 +1,61 @@
+/* About Page
+   ========================================================================== */
+
+.about-section {
+	margin: 50px 0 0;
+
+	.title {
+		margin: 0 0 30px;
+	}
+
+	.description {
+		margin-bottom: 20px;
+	}
+
+	.stat-item {
+		text-align: center;
+
+		> .stat-number {
+			font-family: "Lato-Bold";
+			font-size: 2.4rem;
+			color: $font-gray;
+		}
+
+		> .stat-description {
+			font-family: "Lato-Light";
+			font-size: 1.2rem;
+			color: $font-gray;
+		}
+	}
+
+	.founder-row {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 15px;
+		flex-direction: row;
+	}
+
+	.founder {
+		flex-grow: 1;
+		text-align: center;
+		padding: 0 15px;
+
+		> .founder-img {
+			height: 200px;
+			width: 200px;
+			margin: 0 auto;
+		}
+
+		> .founder-name {
+			font-family: "Lato-Regular";
+			margin-bottom: 0;
+		}
+
+		> .founder-title {
+			color: $font-gray;
+			display: block;
+			font-family: "Lato-Italic";
+			margin-bottom: 25px;
+		}
+	}
+}

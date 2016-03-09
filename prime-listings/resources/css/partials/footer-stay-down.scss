@@ -1,0 +1,24 @@
+/* Footer Stay Down
+   ========================================================================== */
+
+.fsd-wrap {
+	//
+	// Mixins
+	//
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    .content-wrap {
+        display: table-row;
+        height: 100%;
+    }
+
+    .footer-wrap {
+        display: table-row;
+        height: 1px;
+    }
+}

@@ -1,0 +1,90 @@
+/* Filter Bar
+   ========================================================================== */
+
+.filter-bar {
+	border: 1px solid $gray;
+	color: $gray;
+	height: auto;
+
+	a:hover {
+		opacity: 1;
+	}
+
+	.filter-toggle {
+		display: inline-block;
+		font-size: 1.8rem;
+		font-family: "Lato-Bold";
+		color: $gray;
+		padding: 25px 0;
+	}
+
+	.current-city {
+		margin: 0;
+		display: inline-block;
+		font-size: 1.8rem;
+		padding: 25px 5px 25px 0;
+	}
+
+	.button-group {
+		font-size: 0;
+		display: inline-block;
+	}
+
+	.button-small {
+		display: inline-block;
+		border: 1px solid $gray;
+		padding: 5px;
+		font-size: 1.6rem;
+		color: $gray;
+		font-family: "Lato-Bold";
+
+		&:first-child {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+
+		&:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+
+		&:hover {
+			background-color: #d3d3d3;
+			transition: 0.2s ease-out;
+		}
+
+		&.-active {
+			background-color: #d3d3d3;
+			cursor: default;
+		}
+	}
+}
+
+.filter-button-sm {
+	position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: block;
+    padding: 10px 20px;
+
+    .filter-btn {
+    	border: none;
+    	font-family: "Lato-Bold";
+    	font-size: 1.4rem;
+    	padding: 10px;
+    	display: block;
+    	width: 100%;
+    	border: 2px solid $blue;
+		border-bottom-color: darken($blue, 10%);
+		background-color: $blue;
+		color: $white;
+
+		&:hover {
+			background-color: darken($blue, 10%);
+			border-color: darken($blue, 10%);
+			transition: 0.2s ease-out;
+		}
+    }
+}
